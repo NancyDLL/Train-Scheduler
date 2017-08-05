@@ -61,6 +61,14 @@ body{
 }
 
 /*** 5.0 PANELS ***/
+#rightPanel{
+	float: right;
+	width: 75%;
+}
+#leftPanel{
+	float: left;
+	width: 25%;
+}
 .panel{
 	margin-left: 20px;
 	margin-right: 20px;
@@ -68,6 +76,7 @@ body{
 .panel-default > .panel-heading{
 	background-color: #98f4ff; /*** Pale Aqua ***/
 }
+
 /*** 6.0 TABLE ***/
 
 /*** 7.0 FORM ***/
