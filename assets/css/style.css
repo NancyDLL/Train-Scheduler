@@ -1,0 +1,73 @@
+/*-----------------INDEX---------------------*/
+  /*** 1.0 BOX SIZING ***/
+  /*** 2.0 COLOR ***/
+  	/*** 2.1 #a29ec1 - Pale Violet ***/
+  	/*** 2.2 #e6fee6 - Barely There Green ***/
+  	/*** 2.3 #98f4ff - Pale Aqua ***/
+  /*** 3.0 TEXT & FONTS ***/
+  /*** 4.0 PAGE & TOP CONSTRUCTION ***/
+  /*** 5.0 PANELS ***/
+  /*** 6.0 TABLE ***/
+  /*** 7.0 FORM ***/
+/*------------------------------------------*/
+
+/*** 1.0 BOX SIZING ***/
+* {
+  box-sizing: border-box;
+}
+/* this keeps border and padding inside the box measurement */
+
+/*** 3.0 TEXT & FONTS ***/
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+h1{
+	font-family: 'Anton', sans-serif;
+	font-size: 80px;
+	text-align: left;
+	margin: 0px;
+	padding-left: 20px;
+	color: #FFF; /* white */
+}
+h3{
+	color: #FFF; /* white */
+}
+h4{
+	font-family: 'Anton', sans-serif;
+	text-align: left;
+	margin: 0px;
+	padding-left: 20px;
+	color: #FFF; /* white */
+}
+
+/*** 4.0 PAGE & TOP CONSTRUCTION ***/
+body{
+	background-color: #282828; /* Graphite */
+
+}
+.container-fluid{
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.page-header{
+	margin-top: 0px;
+	margin-bottom: 30px;
+	border: 0px;
+	padding-top: 20px;
+	padding-left: 10px;
+	height: 200px;
+	background: url("../images/train_lights.jpg");
+}
+
+/*** 5.0 PANELS ***/
+.panel{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.panel-default > .panel-heading{
+	background-color: #98f4ff; /*** Pale Aqua ***/
+}
+/*** 6.0 TABLE ***/
+
+/*** 7.0 FORM ***/
