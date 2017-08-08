@@ -32,13 +32,55 @@ $("#add-train-btn").on("click", function(event) {
     	frequency: frequencyRate
   	};
 
-// Uploads train data to the database
-database.ref().push(newTrain);
+	// Uploads train data to the database
+	database.ref().push(newTrain);
 
-// Logs train data to console
-console.log(newTrain.name);
-console.log(newTrain.destination);
-console.log(newTrain.start);
-console.log(newTrain.frequency);
+	// Logs train data to console
+	console.log(newTrain.name);
+	console.log(newTrain.destination);
+	console.log(newTrain.start);
+	console.log(newTrain.frequency);
 
+	// Alert
+	alert("Train successfully added");
+
+	// Clears all of the text-boxes
+	$("#train-input").val("");
+	$("#destination-input").val("");
+	$("#time-input").val("");
+	$("#frequency-input").val("");
+});
+
+//Firebase event for adding train to the database and a row in the html
+database.ref().on("child_added", function(childSnapshot, prevChildKey) {
+
+	console.log(childSnapshot.val());
+
+	// Store train info into a variable.
+	var trainName = childSnapshot.val().name;
+	var destinationName = childSnapshot.val().destination;
+	var timeStart = childSnapshot.val().start;
+	var frequencyRate = childSnapshot.val().frequency;
+
+	// Train Info
+	console.log(trainName);
+	console.log(destinationName);
+	console.log(timeStart);
+	console.log(frequencyRate);
+
+	// Prettify the train time start
+	//var trainStartPretty = moment.unix(timeStart).format("HH:mm");
+
+	// Calculate the months worked using hardcore math
+	// To calculate the months worked
+	//var empMonths = moment().diff(moment.unix(empStart, "X"), "months");
+	//console.log(empMonths);
+
+	// Calculate the total billed rate
+	//var empBilled = empMonths * empRate;
+	//console.log(empBilled);
+
+	// Add each train's data into the table
+	$("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + destinationName + "</td><td>" +
+frequencyRate + "</td><td>" + "Next Arrival Math" + "</td><td>" + "Minutes Away Math" + "</td><td>");
 });
