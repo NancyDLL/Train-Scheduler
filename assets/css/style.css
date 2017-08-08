@@ -61,6 +61,9 @@ body{
 }
 
 /*** 5.0 PANELS ***/
+thead{
+	font-weight: bold;
+}
 #rightPanel{
 	float: right;
 	width: 75%;
@@ -74,7 +77,7 @@ body{
 	margin-right: 20px;
 }
 .panel-default > .panel-heading{
-	background-color: #98f4ff; /*** Pale Aqua ***/
+
 }
 
 /*** 6.0 TABLE ***/
