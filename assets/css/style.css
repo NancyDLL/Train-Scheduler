@@ -64,20 +64,10 @@ body{
 thead{
 	font-weight: bold;
 }
-#rightPanel{
-	float: right;
-	width: 75%;
-}
-#leftPanel{
-	float: left;
-	width: 25%;
-}
+
 .panel{
 	margin-left: 20px;
 	margin-right: 20px;
-}
-.panel-default > .panel-heading{
-
 }
 
 /*** 6.0 TABLE ***/
