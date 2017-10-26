@@ -13,7 +13,7 @@ firebase.initializeApp(config);
 var database = firebase.database();
 
 //Button for adding Trains
-$("#add-train-btn").on("click", function() {
+$( "#target" ).submit(function( event ) {
 
   	// Grabs user input
   	var trainName = $("#train-input").val().trim();
