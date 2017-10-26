@@ -4,7 +4,7 @@ KU Coding Bootcamp week 8 assignment utilizing HTML5, CSS3, JavaScript, JQuery, 
 ## Description
 In this assignment students were tasked to create an app that:
 1. Present an input for a user to add a train to the schdule.
-1. Present a list of all trains in the db, the cacluated arrival time and the number of minutes away.
+1. Present a list of all trains in the db, the calcuated arrival time and the number of minutes away.
 
 ## List of Technologies
 

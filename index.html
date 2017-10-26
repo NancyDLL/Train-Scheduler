@@ -56,11 +56,11 @@
 		            	</div><!-- /.form-group -->
 		            	<div class="form-group">
 		            		<label for="time-input">First Train Time (HH:mm - military time)</label>
-		            		<input type="text" id="time-input" class="form-control" placeholder="Enter arrival time in military time, example 14:30." pattern="[A-Za-z]{3,25}" required="true">
+		            		<input type="number" id="time-input" class="form-control" placeholder="Enter arrival time in military time, example 14:30." min="1" max="200" required="true">
 		          		</div><!-- /.form-group -->
 		            	<div class="form-group">
 		            		<label for="frequency-input">Frequency (min)</label>
-		            		<input type="text" id="frequency-input" class="form-control" placeholder="Enter frequency in minutes, example 57." pattern="[A-Za-z]{3,25}" required="true">
+		            		<input type="number" id="frequency-input" class="form-control" placeholder="Enter frequency in minutes, example 57." min="1" max="200" required="true">
 		            	</div><!-- /.form-group -->
 		            	<button type="submit" id="add-train-btn" class="btn btn-primary">Submit</button>
 		        	</form>
