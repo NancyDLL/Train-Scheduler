@@ -18,7 +18,7 @@ $( "#target" ).submit(function( event ) {
   	// Grabs user input
   	var trainName = $("#train-input").val().trim();
   	var destinationName = $("#destination-input").val().trim();
-  	var timeStart = moment($("#time-input").val().trim(), "HH:mm").subtract(10, "years").format("X");
+  	var timeStart = moment($("#time-input").val().trim(), "HH:mm").format("X");
   	var frequencyRate = $("#frequency-input").val().trim();
 
   	// Creates local "temporary" object for holding train data
