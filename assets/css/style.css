@@ -20,7 +20,7 @@
 /*** 3.0 TEXT & FONTS ***/
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
-h1{
+.big-headline{
 	font-family: 'Anton', sans-serif;
 	font-size: 80px;
 	text-align: left;
@@ -31,7 +31,7 @@ h1{
 h3{
 	color: #FFF; /* white */
 }
-h4{
+.tag-line{
 	font-family: 'Anton', sans-serif;
 	text-align: left;
 	margin: 0px;

@@ -1,106 +1,96 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-
 <!-- TITLE & FAVICON -->
-  <title>Train Scheduler</title>
-  <link rel="icon"
-    type="image/png"
-    href="https://nancydll.github.io/Train_Scheduler/favicon.png">
-
+	<title>Train Scheduler</title>
+	<link rel="icon" type="image/png" href="https://nancydll.github.io/Train_Scheduler/favicon.png">
 <!-- GENERAL META -->
-  <meta charset="UTF-8">
-  <meta name="author" content="Nan Loyd-Leffingwell" />
-  <meta name="description" content="Week 8 assignment for JS, JQuery, and Firebase." />
-  <meta name="classification" content="game" />
-  <meta name="copyright" content="&copy; 2017 Nan Loyd-Leffingwell" />
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-<!-- CSS & BOOTSTRAP & JQUERY -->
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+	<meta charset="UTF-8">
+	<meta name="author" content="Nan Loyd-Leffingwell" />
+	<meta name="description" content="Week 8 assignment for JS, JQuery, and Firebase." />
+	<meta name="classification" content="game" />
+	<meta name="copyright" content="&copy; 2017 Nan Loyd-Leffingwell" />
+<!-- For older versions of IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Allow Zooming on Mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+<!-- CSS RESET -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<!-- BOOTSTRAP CDN for CSS-->
+ 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Script for Bootstrap Responsive Support-->
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- CUSTOM CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!-- JQUERY CDN -->
+ 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
-
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
 <!-- Moment.js -->
-  <script src="https://cdn.jsdelivr.net/momentjs/2.18.1/moment.min.js"></script>
-
-<!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/momentjs/2.18.1/moment.min.js"></script>
 <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 </head>
-
 <body>
-
-  <div class="page-header">
-    <h1>Anytime is Train Time</h1>
-    <h4>Choo Choo.</h4>
-  </div>
-  
+	<div class="page-header">
+		<h1 class="big-headline">Anytime is Train Time</h1>
+		<h4 class="tag-line">Choo Choo.</h4>
+	</div><!-- /.page-header -->
 <div class="container-fluid">
-
-
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h3 class="panel-title">Add Train</h3>
-      </div>
-      <div class="panel-body">
-        <form>
-            <div class="form-group">
-              <label for="train-input">Train Name</label>
-              <input type="text" id="train-input" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="destination-input">Destination</label>
-              <input type="text" id="destination-input" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="time-input">First Train Time (HH:mm - military time)</label>
-              <input type="text" id="time-input" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="frequency-input">Frequency (min)</label>
-              <input type="text" id="frequency-input" class="form-control">
-            </div>
-            <button type="submit" id="add-train-btn" class="btn btn-primary">Submit</button>
-          </form>
-      </div>
-    </div>
-
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h3 class="panel-title">Current Train Schedule</h3>
-      </div>
-      <div class="panel-body">
-        <table class="table table-hover" id='train-table'>
-          <thead>
-            <tr>
-              <th>Train Name</th>
-              <th>Destination</th>
-              <th>Frequency (min)</th>
-              <th>Next Arrival</th>
-              <th>Minutes Away</th>
-            </tr>
-          </thead>
-          <tbody>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
- 
-
-</div>
+	<div class="row">
+		<div class="col-md-4">
+		    <div class="panel panel-primary">
+		    	<div class="panel-heading">
+		    		<h3 class="panel-title">Add Train</h3>
+		    	</div><!-- /.panel-heading -->
+		    	<div class="panel-body">
+		    		<form>
+		    			<div class="form-group">
+		              <label for="train-input">Train Name</label>
+		              <input type="text" id="train-input" class="form-control">
+		            </div>
+		            <div class="form-group">
+		              <label for="destination-input">Destination</label>
+		              <input type="text" id="destination-input" class="form-control">
+		            </div>
+		            <div class="form-group">
+		              <label for="time-input">First Train Time (HH:mm - military time)</label>
+		              <input type="text" id="time-input" class="form-control">
+		            </div>
+		            <div class="form-group">
+		              <label for="frequency-input">Frequency (min)</label>
+		              <input type="text" id="frequency-input" class="form-control">
+		            </div>
+		            <button type="submit" id="add-train-btn" class="btn btn-primary">Submit</button>
+		        	</form>
+		    	</div><!-- /.panel-body -->
+		    </div><!-- /.panel panel-primary -->
+		</div><!-- /.grid -->
+		<div class="col-md-8">
+		    <div class="panel panel-primary">
+		      <div class="panel-heading">
+		        <h3 class="panel-title">Current Train Schedule</h3>
+		      </div>
+		      <div class="panel-body">
+		        <table class="table table-hover" id='train-table'>
+		          <thead>
+		            <tr>
+		              <th>Train Name</th>
+		              <th>Destination</th>
+		              <th>Frequency (min)</th>
+		              <th>Next Arrival</th>
+		              <th>Minutes Away</th>
+		            </tr>
+		          </thead>
+		          <tbody>
+		          </tbody>
+		        </table>
+		      </div>
+	    	</div>
+		</div><!-- /.grid -->
+	</div><!-- /.row -->
+</div><!-- /.container-fluid -->
 
 <!-- Javascript -->
   <script type="text/javascript" src="assets/javascript/game.js"></script>
