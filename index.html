@@ -42,52 +42,52 @@
 		<div class="col-md-4">
 		    <div class="panel panel-primary">
 		    	<div class="panel-heading">
-		    		<h3 class="panel-title">Add Train</h3>
+		    		<h3 class="panel-title">Add a Train</h3>
 		    	</div><!-- /.panel-heading -->
 		    	<div class="panel-body">
 		    		<form>
 		    			<div class="form-group">
-		              <label for="train-input">Train Name</label>
-		              <input type="text" id="train-input" class="form-control">
-		            </div>
-		            <div class="form-group">
-		              <label for="destination-input">Destination</label>
-		              <input type="text" id="destination-input" class="form-control">
-		            </div>
-		            <div class="form-group">
-		              <label for="time-input">First Train Time (HH:mm - military time)</label>
-		              <input type="text" id="time-input" class="form-control">
-		            </div>
-		            <div class="form-group">
-		              <label for="frequency-input">Frequency (min)</label>
-		              <input type="text" id="frequency-input" class="form-control">
-		            </div>
-		            <button type="submit" id="add-train-btn" class="btn btn-primary">Submit</button>
+		            		<label for="train-input">Train Name</label>
+		            		<input type="text" id="train-input" class="form-control" placeholder="Enter train name up to 25 letters." pattern="[A-Za-z]{3,25}" required="true">
+		            	</div><!-- /.form-group -->
+		            	<div class="form-group">
+		            		<label for="destination-input">Destination</label>
+		            		<input type="text" id="destination-input" class="form-control" placeholder="Enter train destination up to 25 letters." pattern="[A-Za-z]{3,25}" required="true">
+		            	</div><!-- /.form-group -->
+		            	<div class="form-group">
+		            		<label for="time-input">First Train Time (HH:mm - military time)</label>
+		            		<input type="text" id="time-input" class="form-control" placeholder="Enter arrival time in military time, example 14:30" pattern="[A-Za-z]{3,25}" required="true">
+		          		</div><!-- /.form-group -->
+		            	<div class="form-group">
+		            		<label for="frequency-input">Frequency (min)</label>
+		            		<input type="text" id="frequency-input" class="form-control" placeholder="Enter train name up to 25 letters." pattern="[A-Za-z]{3,25}" required="true">
+		            	</div><!-- /.form-group -->
+		            	<button type="submit" id="add-train-btn" class="btn btn-primary">Submit</button>
 		        	</form>
 		    	</div><!-- /.panel-body -->
 		    </div><!-- /.panel panel-primary -->
 		</div><!-- /.grid -->
 		<div class="col-md-8">
 		    <div class="panel panel-primary">
-		      <div class="panel-heading">
-		        <h3 class="panel-title">Current Train Schedule</h3>
-		      </div>
-		      <div class="panel-body">
-		        <table class="table table-hover" id='train-table'>
-		          <thead>
-		            <tr>
-		              <th>Train Name</th>
-		              <th>Destination</th>
-		              <th>Frequency (min)</th>
-		              <th>Next Arrival</th>
-		              <th>Minutes Away</th>
-		            </tr>
-		          </thead>
-		          <tbody>
-		          </tbody>
-		        </table>
-		      </div>
-	    	</div>
+		    	<div class="panel-heading">
+		        	<h3 class="panel-title">Current Train Schedule</h3>
+		    	</div><!-- /.panel-heading -->
+		    	<div class="panel-body">
+		        	<table class="table table-hover" id='train-table'>
+		          		<thead>
+		            		<tr>
+		              			<th>Train Name</th>
+		              			<th>Destination</th>
+		            			<th>Frequency (min)</th>
+		              			<th>Next Arrival</th>
+		            			<th>Minutes Away</th>
+		            		</tr>
+		          		</thead>
+		        		<tbody>
+		        		</tbody>
+		        	</table>
+		    	</div><!-- /.panel-body -->
+	    	</div><!-- /.panel panel-primary -->
 		</div><!-- /.grid -->
 	</div><!-- /.row -->
 </div><!-- /.container-fluid -->

@@ -9,7 +9,7 @@ In this assignment students were tasked to create an app that:
 ## List of Technologies
 
 ### HTML5
-1. Files built to adhere to W3C standards and validated.
+1. Files built to adhere to W3C standards and validated -> https://validator.w3.org/
 1. 
 1. 
 
