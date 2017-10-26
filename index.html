@@ -48,19 +48,19 @@
 		    		<form id="target">
 		    			<div class="form-group">
 		            		<label for="train-input">Train Name</label>
-		            		<input type="text" id="train-input" class="form-control" placeholder="Enter train name up to 25 letters." pattern="[A-Za-z]{3,25}" required />
+		            		<input type="text" id="train-input" class="form-control" placeholder="Enter up to 25 letters or numbers." pattern="[a-zA-Z0-9\s]{3,25}" required />
 		            	</div><!-- /.form-group -->
 		            	<div class="form-group">
 		            		<label for="destination-input">Destination</label>
-		            		<input type="text" id="destination-input" class="form-control" placeholder="Enter train destination up to 25 letters." pattern="[A-Za-z]{3,25}" required />
+		            		<input type="text" id="destination-input" class="form-control" placeholder="Enter up to 25 letters." pattern="[a-zA-Z\s]{3,25}" required />
 		            	</div><!-- /.form-group -->
 		            	<div class="form-group">
 		            		<label for="time-input">First Train Time (HH:mm - military time)</label>
-		            		<input type="text" id="time-input" class="form-control" placeholder="Enter arrival time in military time, example 14:30." required />
+		            		<input type="text" id="time-input" class="form-control" placeholder="Enter time in military time, example 14:30." pattern="[0-9:]{5}" required />
 		          		</div><!-- /.form-group -->
 		            	<div class="form-group">
 		            		<label for="frequency-input">Frequency (min)</label>
-		            		<input type="text" id="frequency-input" class="form-control" placeholder="Enter frequency in minutes, example 57." required />
+		            		<input type="text" id="frequency-input" class="form-control" placeholder="Enter number of minutes." required />
 		            	</div><!-- /.form-group -->
 		            	<button type="submit" id="add-train-btn" class="btn btn-primary">Add Train</button>
 		        	</form>

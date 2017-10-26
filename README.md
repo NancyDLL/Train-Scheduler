@@ -10,24 +10,22 @@ In this assignment students were tasked to create an app that:
 
 ### HTML5
 1. Files built to adhere to W3C standards and validated -> https://validator.w3.org/
-1. 
+1. Form inputs require regex pattern matching.
 1. 
 
 ### CSS3
-1.
-1.
-1. Bootstrap3 library was used to enable responsive layout for multiple devices.
+1. Bootstrap3 library was used to enable responsive layout for multiple devices, from cell phone to large screen.
+1. New classes added for any modification to Bootstrap3 styling.
+1. 
 
 ### JavaScript
-1.
+1. 
 1.
 1. The JavaScript library of MomentJS was used to 
 
 ### JQuery
-1.
-1.
-1.
+1. Used to handle form submit.
+1. Used to populate the table with the new train info.
 
 ### Firebase
-1.
-1.
+1. Utilized to store the four values of each train record.
