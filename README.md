@@ -16,12 +16,12 @@ In this assignment students were tasked to create an app that:
 ###CSS3
 1.
 1.
-1.
+1. Bootstrap3 was used to 
 
 ###JavaScript
 1.
 1.
-1.
+1. The JavaScript library of MomentJS was used to 
 
 ###JQuery
 1.
