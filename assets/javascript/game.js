@@ -5,9 +5,7 @@ var config = {
 	apiKey: "AIzaSyA07rB0i1_CaykBeZCxAyDy1VlzMQ-0X4U",
 	authDomain: "test-project-e2b2b.firebaseapp.com",
 	databaseURL: "https://test-project-e2b2b.firebaseio.com",
-	projectId: "test-project-e2b2b",
 	storageBucket: "test-project-e2b2b.appspot.com",
-	messagingSenderId: "86122413164"
 };
 
 firebase.initializeApp(config);
@@ -15,13 +13,12 @@ firebase.initializeApp(config);
 var database = firebase.database();
 
 //Button for adding Trains
-$("#add-train-btn").on("click", function(event) {
-  	event.preventDefault();
+$("#add-train-btn").on("click", function() {
 
   	// Grabs user input
   	var trainName = $("#train-input").val().trim();
   	var destinationName = $("#destination-input").val().trim();
-  	var timeStart = moment($("#time-input").val().trim(), "HH:mm").format("X");
+  	var timeStart = moment($("#time-input").val().trim(), "HH:mm").subtract(10, "years").format("X");
   	var frequencyRate = $("#frequency-input").val().trim();
 
   	// Creates local "temporary" object for holding train data
@@ -49,6 +46,9 @@ $("#add-train-btn").on("click", function(event) {
 	$("#destination-input").val("");
 	$("#time-input").val("");
 	$("#frequency-input").val("");
+
+	// Determine when the next train arrives.
+  	return false;
 });
 
 //Firebase event for adding train to the database and a row in the html
