@@ -8,27 +8,26 @@ In this assignment students were tasked to create an app that:
 
 ## List of Technologies
 
-###HTML5
+### HTML5
 1.
 1. 
 1. 
 
-###CSS3
+### CSS3
 1.
 1.
-1. Bootstrap3 was used to 
+1. Bootstrap3 library was used to 
 
-###JavaScript
+### JavaScript
 1.
 1.
 1. The JavaScript library of MomentJS was used to 
 
-###JQuery
+### JQuery
 1.
 1.
 1.
 
-###Firebase
-1.
+### Firebase
 1.
 1.
