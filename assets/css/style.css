@@ -15,7 +15,7 @@
 * {
   box-sizing: border-box;
 }
-/* this keeps border and padding inside the box measurement */
+/* Keep border and padding inside the box measurement */
 
 /*** 3.0 TEXT & FONTS ***/
 @import url('https://fonts.googleapis.com/css?family=Anton');
@@ -42,14 +42,8 @@ h4{
 /*** 4.0 PAGE & TOP CONSTRUCTION ***/
 body{
 	background-color: #282828; /* Graphite */
+}
 
-}
-.container-fluid{
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-}
 .page-header{
 	margin-top: 0px;
 	margin-bottom: 30px;
