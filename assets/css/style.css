@@ -40,6 +40,9 @@ h3{
 }
 
 /*** 4.0 PAGE & TOP CONSTRUCTION ***/
+html, body {
+  height: 100%;
+}
 body{
 	background-color: #282828; /* Graphite */
 }
@@ -59,8 +62,10 @@ thead{
 	font-weight: bold;
 }
 
-
-
-/*** 6.0 TABLE ***/
-
-/*** 7.0 FORM ***/
+/*** 7.0 FOOTER ***/
+footer{
+  background-color: #080808;
+  height: 85px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
