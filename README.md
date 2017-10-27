@@ -14,9 +14,9 @@ In this assignment students were tasked to create an app that:
 1. 
 
 ### CSS3
-1. Bootstrap3 library was used to enable responsive layout for multiple devices, from cell phone to large screen.
+1. Bootstrap3 library was used to enable responsive layout for multiple devices, from old iPhone to large screen.
 1. New classes added for any modification to Bootstrap3 styling.
-1. 
+1. Headline resizes based on viewport width.
 
 ### JavaScript
 1. 
