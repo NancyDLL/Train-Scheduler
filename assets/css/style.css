@@ -54,7 +54,7 @@ body{
 	padding-top: 20px;
 	padding-left: 10px;
 	height: 200px;
-	background: url("../images/train_lights.jpg");
+	background-image: url("../images/train_lights.jpg");
 }
 
 /*** 5.0 PANELS ***/
