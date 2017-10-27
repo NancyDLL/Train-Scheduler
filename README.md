@@ -10,7 +10,7 @@ In this assignment students were tasked to create an app that:
 
 ### HTML5
 1. Files built to adhere to W3C standards and validated -> https://validator.w3.org/
-1. Form inputs require regex pattern matching.
+1. Form inputs require 4 varieties of regex pattern matching.
 1. 
 
 ### CSS3
@@ -25,6 +25,7 @@ In this assignment students were tasked to create an app that:
 
 ### JQuery
 1. Used to handle form submit.
+1. Clears the text within the form after submission.
 1. Used to populate the table with the new train info.
 
 ### Firebase
