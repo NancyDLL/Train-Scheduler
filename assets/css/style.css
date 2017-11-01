@@ -63,8 +63,11 @@ thead{
 }
 
 /*** 7.0 FOOTER ***/
+.sticky-fix{
+	padding-bottom: 85px;
+}
 footer{
-  background-color: #080808;
+  background-color: rgba(8,8,8,0.5);
   height: 85px;
   padding-top: 10px;
   padding-left: 20px;
