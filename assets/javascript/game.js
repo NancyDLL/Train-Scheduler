@@ -2,10 +2,10 @@ console.log("The version 1 js file for Trains is connected.")
 
 // Initialize Firebase
 var config = {
-	apiKey: "AIzaSyA07rB0i1_CaykBeZCxAyDy1VlzMQ-0X4U",
-	authDomain: "test-project-e2b2b.firebaseapp.com",
-	databaseURL: "https://test-project-e2b2b.firebaseio.com",
-	storageBucket: "test-project-e2b2b.appspot.com",
+	apiKey: "AIzaSyBNBojhE7ng6HzSyES27gQdg-w0gNpG-OU",
+	authDomain: "train-scheduler-301cd.firebaseapp.com",
+	databaseURL: "https://train-scheduler-301cd.firebaseio.com",
+	storageBucket: "train-scheduler-301cd.appspot.com",
 };
 
 firebase.initializeApp(config);
